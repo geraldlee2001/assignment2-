@@ -21,19 +21,37 @@ body {
     padding-left: 5px;
 }
 
-#aside-nav{
+#asideNav{
     margin-top: auto;
     margin-bottom: auto;
     grid-area: "aside-nav";
 }
 
-#aside-nav a {
+#asideNav a {
     color: white;
     text-decoration: none;
     font-size: 20px;
     padding: 5px;
     margin: 5px;
 }
+
+.carousel {
+    margin-bottom: 10rem;
+}
+
+.carousel-item {
+    height: 32rem;
+}
+
+.carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+}
+
+
 
 form p{
     text-align: right;
