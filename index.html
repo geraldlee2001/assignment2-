@@ -3,6 +3,8 @@
     <meta charset="UTF-8">
     <title>BOOKDOC</title>
     <link rel="stylesheet" href="assert/css/bootstrap.min.css">
+    <script src="assert/js/bootstrap.bundle.min.js"></script>
+    <script src="assert/js/jquery-3.5.1.min.js"></script>
     <!-- Main CSS -->
     <link rel="stylesheet" href="style.css">
     <!--[if lt IE 9]> 
@@ -14,10 +16,10 @@
         <!--Navbar-->
         <div class="navbar"> <!--有点多余-->
             <a href="index.html"><img id="logo" src="image/BookDoc_logo.png" alt="LOGO"></a>
-            <nav id="header-nav">
-                <a class="header-nav-item" href ="aboutUs.html">About Us</a>
-                <a class="header-nav-item" href="login.html">Login</a>
-                <a class="header-nav-item" href="register.html">Register</a>
+            <nav id="aside-nav">
+                <a href ="aboutUs.html">About Us</a>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
             </nav>
         </div>
     </header>  
@@ -41,7 +43,35 @@
                 <a href="#">Health Info</a>
             </li>
         </ul>
-    </div> 
+    </div>
+    <!-- BS Carousel -->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+    <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="image/Slideshow Banner/large_1x_187347696a.png" alt="Los Angeles">
+            </div>
+            <div class="item">
+                <img src="image/Slideshow Banner/large_1x_38a8c74fac.png" alt="Chicago">
+            </div>
+        <div class="item">
+            <img src="image/Slideshow Banner/large_1x_a9fd08bf47.png" alt="New York">
+        </div>
+    <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+</div>
+
     <!-- Activ -->
         <section id="activ">
             <h1>BookDoc Activ</h1>  

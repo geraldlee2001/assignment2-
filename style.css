@@ -9,9 +9,9 @@ body {
     height: 50%;
     background-color: skyblue;
     display: grid;
-    column-gap: normal;
+    column-gap: 40%;
     grid-template-columns: 1fr 1fr;
-    grid-template-columns: "logo header-nav";
+    grid-template-columns: "logo aside-nav";
 }
 
 #logo{
@@ -21,30 +21,23 @@ body {
     padding-left: 5px;
 }
 
-#header-nav{
+#aside-nav{
     margin-top: auto;
     margin-bottom: auto;
-    display: flex;
-    grid-area: "header-nav";
-    float: right;
-    padding-right: 5px;
+    grid-area: "aside-nav";
 }
 
-.navbar a {
-    text-align: right;
-    padding: 10px;
+#aside-nav a {
     color: white;
     text-decoration: none;
     font-size: 20px;
+    padding: 5px;
+    margin: 5px;
 }
-
 
 form p{
     text-align: right;
 }
-
-
-
 
 .introvideo{
     width: 320px;
