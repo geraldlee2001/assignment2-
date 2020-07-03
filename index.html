@@ -12,14 +12,12 @@
 <body>
     <header>
         <!--Navbar-->
-        <div class="navbar"> <!--有点多余-->
             <a href="index.html"><img id="logo" src="image/BookDoc_logo.png" alt="LOGO"></a>
             <nav id="asideNav">
-                <a href ="aboutUs.html">About Us</a>
+                <a href ="https://sites.bookdoc.com/">About Us</a>
                 <a href="login.html">Login</a>
                 <a href="register.html">Register</a>
             </nav>
-        </div>
     </header>  
     <div class="menu">
         <!--Menu-->
@@ -30,24 +28,15 @@
                 <i class="activRewards"></i>
                 <a href="#activ">Go Activ & Get Rewards</a>
             </li>
-            <li>
 
+            <li>
                 <i class="search"></i>
-
-                <a href="#">Search & Book</a>
-            </li>
-            <li>
-                <i class="shop"></i>
-                <a href="#">One-Stop Shop for Corporate Healthcare</a>
-            </li>
-            <li>
-                <i class="info"></i>
-                <a href="#">Health Info</a>
+                <a href="#search">Search & Book</a>
             </li>
         </ul>
     </div>
     <!-- BS Carousel -->
-    <div id="bookdocCarousel" class="carousel slide" data-ride="carousel">
+    <!-- <div id="bookdocCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#bookdocCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#bookdocCarousel" data-slide-to="1"></li>
@@ -70,12 +59,12 @@
         </a>
         <a class="carousel-control-next" href="#bookdocCarousel" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
+            <span class="sr-only">Next</span> -->
             
-    Activ 
+    <!-- Activ  -->
     <section id="activ"></section>
-            <h1>BookDoc Activ</h1>  
-                <p>Get Rewarded for Staying Activ</p>
+            <h2 class="sectionTitle">BookDoc Activ</h2>  
+                <p class="sectionDesc">Get Rewarded for Staying Activ</p>
                 <video class="introvideo" controls>
                     <source src="video/bookdoc-activ-preview.mp4" type="video/mp4; codecs=avc1.42E01E,mp4a.40.2">
                 </video>
@@ -94,18 +83,21 @@
                             <strong>Times</strong>around the globe</p>
                             <i class="times"></i>
                     </li>
+
                     <li>
                         <h3 class="PowerOfWalkingCalories">405 Billion</h3>
                         <p>
                             <strong>Calories</strong>burnt on Activ</p>
                              <i class="calories"></i>
                     </li>
+
                     <li>
                         <h3 class="PowerOfWalkingBigMac">720.0 Million</h3>
                         <p>
                             <strong>Big Mac</strong>consumed</p>
                             <i class="bigmac"></i>
                     </li>
+
                 </ul>
 
                 <h3 class="4SimpleSteps">BookDoc Activ in 4 Simple Steps</h3>
@@ -113,30 +105,56 @@
                     <li>
                         <i class="step1"></i>
                         <span class="stepsLabel">Step 1</span>
-                        <h4 class="stepsDesc">Sync your fitness tracker to the BookDoc mobile app</h4>
+                        <p class="stepsDesc">Sync your fitness tracker to the BookDoc mobile app</p>
                     </li>
+
                     <li>
                         <i class="step2"></i>
                         <span class="stepsLabel">Step 2</span>
-                        <h4 class="stepsDescc">
-                        Just start walking or running!</h4>
-                    </li
-                    ><li>
+                        <p class="stepsDescc">Just start walking or running!</p>
+                    </li>
+                    
+                    <li>
                         <i class="step3"></i>
                         <span class="stepsLabel">Step 3</span>
-                        <h3 class="stepsDesc">
-                            Track your average daily steps over the course of the month</h3>
+                        <p class="stepsDesc">Track your average daily steps over the course of the month</p>
                     </li>
+
                     <li>
                         <i class="step4"></i>
-                        <span class="stepsLabell">Step 4</span>
-                        <h3 class="stepsDesc">Select and redeem your rewards!</h3>
+                        <span class="stepsLabel">Step 4</span>
+                        <p class="stepsDesc">Select and redeem your rewards!</>
                     </li>
+
                 </ul>
+    </section>
+
+    <section id="search">
+        <h2 class="sectionTitle">BookDoc Search & Book</h2>
+        <p class="sectionDesc">Hassle-free integrated online eco-system for finding and booking healthcare professionals</p>
+        <form id="frSearch">
+            <input type="text" id="typeSearching" name="typeSearching" placeholder="placeholder = 'Specialty, Service, Doctor, Clinic, etc.">
+            <br>
+            <input type="text" id="location" name="userLocation" placeholder="Current Location">
+            <input type="date" id="bookingDate" name="bookingDate">
+            <br>
+        </form>
     </section>
    
     <footer>
+        <ul id="footerList">
+            <li>
+                <a href="https://sites.bookdoc.com/contact-us/">Contact Us</a>
+            </li>
 
+            <li>
+                <a href="tel:1300882362">1300-88-2362</a>
+            </li>
+
+            <li>
+                <a href="mailto:care@bookdoc.com">care@bookdoc.com</a>
+            </li>
+        </ul>
     </footer>
 </body>
 </html>

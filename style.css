@@ -84,14 +84,14 @@ form label{
     font-size:25px;
 }
 
-form input{
-    padding: 8px 300px;
-    margin-bottom: 15px;
-}
 
 form a{
     text-decoration: none;
     text-align: right;
+}
+
+input#typeSearching{
+    width: 500px;
 }
 
 
