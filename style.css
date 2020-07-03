@@ -1,45 +1,61 @@
-body{
+body {
     background-color: #FFFFFF; 
     color: #90C7E3;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-#logo{
-   height: 150px;
 }
 
 .navbar {
     width: 100%;
     height: 50%;
     background-color: skyblue;
-    overflow: auto;
+    display: grid;
+    column-gap: 40%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: "logo aside-nav";
 }
 
-.navbar ul{
-    display: inline;
+#logo{
+    height: 100px;
+    grid-area: "logo";
+    float: left;
+    padding-left: 5px;
 }
 
-.navbar li{
-    display: inline-block;
+#asideNav{
+    margin-top: auto;
+    margin-bottom: auto;
+    grid-area: "aside-nav";
 }
 
-.navbar a {
-    text-align: right;
-    padding: 12px;
+#asideNav a {
     color: white;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px;
 }
+
+.carousel {
+    margin-bottom: 10rem;
+}
+
+.carousel-item {
+    height: 32rem;
+}
+
+.carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+}
+
 
 
 form p{
     text-align: right;
 }
-
-header, nav, main, footer{
-    display: block;
-}
-
 
 .introvideo{
     width: 320px;
@@ -69,3 +85,4 @@ form a{
     text-decoration: none;
     text-align: right;
 }
+
