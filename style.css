@@ -32,10 +32,6 @@ body{
 }
 
 
-form p{
-    text-align: right;
-}
-
 header, nav, main, footer{
     display: block;
 }
@@ -44,6 +40,11 @@ header, nav, main, footer{
 .introvideo{
     width: 320px;
     height:240px;
+}
+
+ul.menu{
+    list-style: none;
+    display: inline-block;
 }
 
 form{
@@ -69,3 +70,8 @@ form a{
     text-decoration: none;
     text-align: right;
 }
+
+form p{
+    text-align: right;
+}
+
