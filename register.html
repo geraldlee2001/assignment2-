@@ -9,29 +9,30 @@
 </head>
 <body>
     <header>
-        <a href="Index.html"><img id="logo" src="image/logo.jpg"></a>
-        <nav>
-            <ul>
-                <li><a href="aboutUs.html">About Us</a> </li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="register.html">Register</a></li>
-            </ul>
-        </nav>
-    </header>
-    <content>
-        <h1>LOGIN IN</h1>
+        <!--Navbar--> 
+            <a href="index.html"><img id="logo" src="image/BookDoc_logo.png" alt="LOGO"></a>
+            <nav id="asideNav">
+                <a href ="https://sites.bookdoc.com/" target="_blank">About Us</a>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+            </nav>
+    </header>  
+
+    <!--Register-->
+    <section id="register">
+        <h1 class="sectionTitle">LOGIN IN</h1>
     <form action="">
         <label for="email">Email:</label>
         <br>
-        <input type="text" id="email" name="Email" >
+        <input type="text" id="email" name="Email" placeholder="Please enter your email" >
         <br>
         <label for="password">Password:</label>
         <br>
-        <input type="password" id="password" name="Password" >
+        <input type="password" id="password" name="Password" placeholder="Please enter your password" >
         <br>
         <label for="passwordConfirmed">Password Confirmed:</label>
         <br>
-        <input type="password" id="passwordConfirmed" name="PasswordConfirmed" >
+        <input type="password" id="passwordConfirmed" name="PasswordConfirmed" placeholder="Please enter again your password">
         <br>
         <label for="birthday">Birthday</label>
         <br>
@@ -39,7 +40,9 @@
         <br>
         <button type="submit">Submit</button>
     </form>
-    </content>
+    </section>
+
+    <!--Footer-->
     <footer>
         <ul id="footerList">
             <li>
