@@ -9,8 +9,8 @@ header {
     height: 50%;
     background-color: skyblue;
     display: grid;
-    column-gap: 40%;
     grid-template-columns: 1fr 1fr;
+    column-gap: 40%;
     grid-template-columns: "logo aside-nav";
 }
 
@@ -38,7 +38,7 @@ header {
 /*Owl Carousel*/
 #bookdocSlider .item img{
     display: block;
-    width: 100%;
+    width: 50%;
     height: auto;
 }
 
@@ -80,4 +80,54 @@ input#typeSearching{
     width: 500px;
 }
 
+/* The container <div> - needed to position the dropdown content */
+ .footDropdown {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+}
 
+.footDropBtn1, .footDropBtn2, .footDropBtn3, .footDropBtn4 {
+    background-color: red;
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+}
+
+  
+/* Dropdown Content (Hidden by Default) */
+.footDropCont1, .footDropCont2, .footDropCont3, .footDropCont4 {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+/* Links inside the dropdown */
+.footDropCont1 a, .footDropCont2 a, .footDropCont3 a, .footDropCont4 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.footDropCont1 a:hover, .footDropCont2 a:hover, .footDropCont3 a:hover, .footDropCont4 a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.footDropdown1:hover .footDropCont1 {display: block;}
+.footDropdown2:hover .footDropCont2 {display: block;}
+.footDropdown3:hover .footDropCont3 {display: block;}
+.footDropdown4:hover .footDropCont4 {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.footDropdown1:hover .footDropBtn1 {background-color: #3e8e41;}
+.footDropdown2:hover .footDropBtn2 {background-color: #3e8e41;}
+.footDropdown3:hover .footDropBtn3 {background-color: #3e8e41;}
+.footDropdown4:hover .footDropBtn4 {background-color: #3e8e41;}
