@@ -1,33 +1,47 @@
+/*Color Combination 
+#f0000d - red, #eff2f7 - white, #d6bcaf - light brown, #957568 - brown, #5b453a - dark brown
+https://colorpalettes.net/color-palette-862/
+*/
+
+@font-face{
+    
+}
+
 body {
-    background-color: #FFFFFF; 
-    color: #90C7E3;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f5f9; 
+    font-family: ;
 }
 
 header {
     width: 100%;
-    height: 50%;
+    height: 130px;
     background-color: skyblue;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 40%;
-    grid-template-columns: "logo aside-nav";
 }
 
-#logo{
-    height: 100px;
-    grid-area: "logo";
-    float: left;
-    padding-left: 5px;
-}
-
-#asideNav{
+header a {
     margin-top: auto;
     margin-bottom: auto;
-    grid-area: "aside-nav";
 }
 
-#asideNav a {
+header a #logo{
+    height: 100px;
+    justify-content: start;
+    padding-left: 10px;
+}
+
+header #asideNav{
+    font-weight: bold;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+header #asideNav a {
     color: white;
     text-decoration: none;
     font-size: 20px;
@@ -80,20 +94,43 @@ input#typeSearching{
     width: 500px;
 }
 
+footer #footTop{
+    background-color: #f0000d;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+footer #footTop a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.6em;
+    color: #eff2f7;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 1.75em;
+    padding-right: 1.75em;
+}
+
+footer #footMain{
+    background-color: #5b453a;
+}
+
 /* The container <div> - needed to position the dropdown content */
  .footDropdown {
     position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: small;
 }
 
 .footDropBtn1, .footDropBtn2, .footDropBtn3, .footDropBtn4 {
-    background-color: red;
-    color: white;
-    padding: 5px;
-    font-size: 16px;
+    color: #dddfe6;
+    background-color: inherit;
     border: none;
+    font-size: large;
+    padding-left: 4em;
+    padding-right: 4em;
 }
 
   
@@ -102,32 +139,34 @@ input#typeSearching{
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    min-width: 160px;
+    min-width: 120px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    margin-left: 5%;
 }
   
 /* Links inside the dropdown */
 .footDropCont1 a, .footDropCont2 a, .footDropCont3 a, .footDropCont4 a {
     color: black;
-    padding: 12px 16px;
+    padding: 10px 10px;
     text-decoration: none;
     display: block;
 }
 
 /* Change color of dropdown links on hover */
-.footDropCont1 a:hover, .footDropCont2 a:hover, .footDropCont3 a:hover, .footDropCont4 a:hover {
-    background-color: #ddd;
-}
+.footDropCont1 a:hover { background-color: #ddd; }
+.footDropCont2 a:hover { background-color: #ddd; }
+.footDropCont3 a:hover { background-color: #ddd; }
+.footDropCont4 a:hover { background-color: #ddd; }
 
 /* Show the dropdown menu on hover */
-.footDropdown1:hover .footDropCont1 {display: block;}
-.footDropdown2:hover .footDropCont2 {display: block;}
-.footDropdown3:hover .footDropCont3 {display: block;}
-.footDropdown4:hover .footDropCont4 {display: block;}
+.footDropdown1:hover .footDropCont1 { display: block; }
+.footDropdown2:hover .footDropCont2 { display: block; }
+.footDropdown3:hover .footDropCont3 { display: block; }
+.footDropdown4:hover .footDropCont4 { display: block; }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.footDropdown1:hover .footDropBtn1 {background-color: #3e8e41;}
-.footDropdown2:hover .footDropBtn2 {background-color: #3e8e41;}
-.footDropdown3:hover .footDropBtn3 {background-color: #3e8e41;}
-.footDropdown4:hover .footDropBtn4 {background-color: #3e8e41;}
+.footDropdown1:hover .footDropBtn1 { color: #f0000d; }
+.footDropdown2:hover .footDropBtn2 { color: #f0000d; }
+.footDropdown3:hover .footDropBtn3 { color: #f0000d; }
+.footDropdown4:hover .footDropBtn4 { color: #f0000d; }
