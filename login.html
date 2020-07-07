@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <title>BOOKDOC: Login</title>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
     <!--[if lt IE 9]> 
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> 
     <![endif]-->
@@ -24,15 +25,15 @@
     <form id="loginForm" action="">
         <label for="email">Email:</label>
         <br>
-        <input type="email" id="email" name="emailLogin" placeholder="Please enter your email">
+        <input type="email" id="emailLogin" name="emailLogin" placeholder="Please enter your email">
         <br>
         <label for="password">Password:</label>
         <br>
-        <input type="password" id="password" name="passwordLogin" placeholder="Please enter your password"> 
+        <input type="password" id="passwordLogin" name="passwordLogin" placeholder="Please enter your password"> 
         <br>
-        <p><a href="forgetPassword.html">Forget Password</a></p>
+        <p><a href="#">Forget Password</a></p>
         <br>
-        <button id="loginSubmit" type="submit">Submit</button>
+        <button id="loginSubmit" type="submit" onclick="loginCheck()">Submit</button>
     </form>
     </content>
 
@@ -52,5 +53,5 @@
             </li>
         </ul>
     </footer>
-    <script src="main.js"></script>
+    
 </body>

@@ -1,13 +1,15 @@
 function loginCheck()
 {
-    var email;
-    email=document.getElementById("emailLogin").value.indexOf("@");
-    console.log(email);
-    document.getElementById("loginSubmit").onclick = alert("Please enter your email");;
-    function reply_click()
+    if (!document.getElementById("emailLogin").value)
     {
-
-            alert("Please enter your email");
         
+        alert("Please enter your email");
+    }
+    else {
+        var emailLogin=document.getElementById("emailLogin").value
+        if (!document.getElementById("passwordLogin").value)
+        {
+            alert("Please enter your password");
+        }
     }
 }
