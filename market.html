@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<head lang="en">
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <title>BOOKDOC</title>
     <link type="text/css" rel="stylesheet" href="assert/css/bootstrap.min.css">
@@ -9,10 +10,9 @@
     <script type="text/js" src="assert/js/jquery-3.5.1.min.js"></script>
     <script type="text/js" src="assert/js/bootstrap.bundle.min.js"></script>
 </head>
-<body
-></body>
-    <header>
+<body>
     <!--Navbar--> 
+    <header>
             <a href="index.html"><img id="logo" src="image/BookDoc_logo.png" alt="LOGO"></a>
             <nav id="asideNav">
                 <a href ="https://sites.bookdoc.com/" target="_blank">About Us</a>
@@ -62,12 +62,12 @@
             <ul class="marketList">
                 <li>
                     <h3 class="marketMember">Already a member?</h3>
-                    <a href="https://shop.bookdoc.com/" target="_blank"><button type="button" id="shopNow" >Shop Now!</button></a>
+                    <button type="button" id="shopNowMember" onclick="marketMemberRedirect()">Shop Now!</button>
                 </li>
                 
                 <li>
                     <h3 class="marketNonMemer">Not a member?</h3>
-                    <a href="https://sites.bookdoc.com/contact-us/" target="_blank"><button type="button" id="shopNow" >Sign Up</button></a>
+                    <button type="button" id="shopNowNonMember" onclick="marketNonMemberRedirect()">Sign Up</button>
                 </li>
         </ul>
     </section>
@@ -90,3 +90,4 @@
     </footer>
     <script src="main.js"></script>
 </body>
+</html>

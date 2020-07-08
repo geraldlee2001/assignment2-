@@ -11,5 +11,15 @@ function loginCheck()
         {
             alert("Please enter your password");
         }
-    }
+    } 
+}
+
+function marketNonMemberRedirect()
+{
+    window.open("https://sites.bookdoc.com/contact-us/","_blank");
+}
+
+function marketMemberRedirect()
+{
+    window.open("https://shop.bookdoc.com/","_blank");
 }

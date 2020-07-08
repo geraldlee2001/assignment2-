@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>BOOKDOC: Login</title>
@@ -22,12 +23,12 @@
     <!--Login-->
     <section id="login">
         <h1 class="sectionTitle">LOGIN IN</h1>
-    <form id="loginForm" action="">
-        <label for="email">Email:</label>
+    <form id="formLogin" method="POST" action="#">
+        <label for="emailLogin">Email:</label>
         <br>
         <input type="email" id="emailLogin" name="emailLogin" placeholder="Please enter your email">
         <br>
-        <label for="password">Password:</label>
+        <label for="passwordLogin">Password:</label>
         <br>
         <input type="password" id="passwordLogin" name="passwordLogin" placeholder="Please enter your password"> 
         <br>
@@ -35,7 +36,7 @@
         <br>
         <button id="loginSubmit" type="submit" onclick="loginCheck()">Submit</button>
     </form>
-    </content>
+    </section>
 
     <!--Footer-->
     <footer>
@@ -55,3 +56,4 @@
     </footer>
     
 </body>
+</html>

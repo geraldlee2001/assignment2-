@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>BOOKDOC: Login</title>
@@ -21,22 +22,22 @@
     <!--Register-->
     <section id="register">
         <h1 class="sectionTitle">LOGIN IN</h1>
-    <form action="">
-        <label for="email">Email:</label>
+    <form id="formRegister" method="POST" action="#">
+        <label for="emailRegister">Email:</label>
         <br>
         <input type="text" id="emailRegister" name="Email" placeholder="Please enter your email" >
         <br>
-        <label for="password">Password:</label>
+        <label for="passwordRegister">Password:</label>
         <br>
         <input type="password" id="passwordRegister" name="Password" placeholder="Please enter your password" >
         <br>
-        <label for="passwordConfirmed">Password Confirmed:</label>
+        <label for="passwordConfirmedRegister">Password Confirmed:</label>
         <br>
         <input type="password" id="passwordConfirmedRegister" name="PasswordConfirmed" placeholder="Please enter again your password">
         <br>
-        <label for="birthday">Birthday</label>
+        <label for="birthdayRegister">Birthday</label>
         <br>
-        <input type="date" id="Birthday" name="Birthday">
+        <input type="date" id="birthdayRegister" name="birthday">
         <br>
         <button type="submit">Submit</button>
     </form>
@@ -60,3 +61,4 @@
     </footer>
     <script src="main.js"></script>
 </body>
+</html>
