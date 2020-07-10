@@ -1,8 +1,7 @@
 function loginCheck()
 {
     if (!document.getElementById("emailLogin").value)
-    {
-        
+    { 
         alert("Please enter your email");
     }
     else {
@@ -10,19 +9,16 @@ function loginCheck()
         if (!document.getElementById("passwordLogin").value)
         {
             alert("Please enter your password");
-        }
+        }   
     }
 }
 
-//Owl Carousel Plugin
-$(document).ready(function() {
-    $("#bookdocSlider").owlCarousel({
-        autoPlay : true,
-        autoPlay: 1000,
-        slideSpeed : 300,
-        paginationSpeed : 400,
-        singleItem: true,
-        loop:true,
-        nav:true,
-    });
-});
+function marketNonMemberRedirect()
+{
+    window.open("https://sites.bookdoc.com/contact-us/","_blank");
+}
+
+function marketMemberRedirect()
+{
+    window.open("https://shop.bookdoc.com/","_blank");
+}
