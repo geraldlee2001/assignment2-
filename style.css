@@ -276,4 +276,12 @@ hr { width: 60em;}
 .footBot a:hover {
     color: #ff2800;
 }
+
+.powerOfWalkingList{
+    display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 30px;
+	text-align: center;
+}
+
 /*End of Footer*/
