@@ -277,3 +277,18 @@ hr { width: 60em;}
     color: #ff2800;
 }
 /*End of Footer*/
+
+.container {
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    background-color: ghostwhite;
+}
+
+.fotorama {
+    height: 100%;
+    width: 80%;
+    padding-left: 45px;
+}
