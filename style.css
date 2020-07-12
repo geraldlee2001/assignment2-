@@ -4,19 +4,55 @@ https://encycolorpedia.com/
 */
 
 body {
-    background-color: white;
+    background-color: #fafafa;
     margin: 0;
 }
 
 header {
+    background-image: linear-gradient(to left,#fafafa, #ffffff);
     width: 100%;
-    height: 120px;
-    background-color: #15f2fd;
+    height: 80px;
+    background-color: #ffffff;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 40%;
+
 }
 
+footer{
+    margin-bottom: auto;
+    width: 100%;
+    height: 30px;
+}
+#asideNav a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+#asideNav a:hover{
+    color: red;
+}
+#asideNav a:active{
+    color: royalblue;
+}
+.homeMenu a{
+    color: rgb(114, 113, 113);
+    text-decoration: none;
+}
+.homeMenu a:hover{
+    color: red;
+}
+.homeMenu a:active{
+    color: royalblue;
+}
+#logo{
+    height: 70px;
+
+}
+#asideNav{
+word-spacing: 10px;
+text-align: right;
+margin-right: 30px;
+}
 #home {
     margin-top: auto;
     margin-bottom: auto;
@@ -281,7 +317,113 @@ hr { width: 60em;}
     display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-gap: 30px;
-	text-align: center;
+    text-align: center;
+    list-style-type: none;
+    font-size: 20px;
+
+
+}
+.powerOfWalkingList h4{
+    color: rgb(255, 87, 87);
+    font-size: 20px;
+}
+.homeMenu{
+    display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 30px;
+    text-align: center;
+    list-style-type: circle; 
+
+}
+.sectionTitle{
+    text-align: center;
+
+}
+.sectionDesc{
+    text-align: center;
+
+}
+.introvideo{
+    margin-left: auto;
+    margin-right: auto;
+    display: block
+}
+.title{
+    text-align: center;
+    color:rgb(8, 8, 8) ;
+}
+#footerList {
+    display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 30px;
+    text-align: center;
+    list-style-type: none;
+    margin: 0px;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+    
+}
+.stepsList{
+    display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 30px;
+    text-align: center;
+    list-style-type: none;
+    
+
+}
+.stepsLabel {
+    margin: 1.42857em auto;
+    width: 5.71429em;
+    height: 2.14286em;
+    background-color: rgb(255, 87, 87);
+    font-size: 20px;
+    color: white;
+    line-height: 2em;
+    border-radius: .35714em;
+    padding: 5px;
 }
 
+.sectionTitle{
+    color: rgb(255, 87, 87);
+}
+
+#footerList a{
+    color: rgb(114, 113, 113);
+    text-decoration: none;
+}
+#footerList a:hover{
+    color: red;
+}
+#footerList a:active{
+    color: royalblue;
+}
+#frSearch{
+    background-color: #fafafa;
+    border-style: solid;
+    padding: 10px;
+}
+.sectionTilte{
+    text-align: center
+}
+.description{
+    text-align: center;
+}
+
+.marketContentTitle{
+    text-align: center;
+}
+.marketContent{
+    text-align: center;
+}
+.marketList{
+    text-align: center;
+    display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 30px;
+    text-align: center;
+    list-style-type: none;
+    font-size: 20px;
+}
 /*End of Footer*/
