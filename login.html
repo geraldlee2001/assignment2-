@@ -23,36 +23,109 @@
     <!--Login-->
     <section id="login">
         <h1 class="sectionTitle">LOGIN IN</h1>
-    <form id="formLogin" action="#">
-        <label for="emailLogin">Email:</label>
-        <br>
-        <input type="email" id="emailLogin" name="emailLogin" placeholder="Please enter your email">
-        <br>
-        <label for="passwordLogin">Password:</label>
-        <br>
-        <input type="password" id="passwordLogin" name="passwordLogin" placeholder="Please enter your password"> 
-        <br>
-        <p><a href="#">Forget Password</a></p>
-        <br>
-        <button id="loginSubmit" type="submit" onclick="loginCheck()">Submit</button>
-    </form>
+        <fieldset>
+            <form id="formLogin" action="#">
+                <label for="emailLogin">Email:</label>
+                <br>
+                <input type="email" id="emailLogin" name="emailLogin" size="30" placeholder="Please enter your email">
+                <br>
+                <label for="passwordLogin">Password:</label>
+                <br>
+                <input type="password" id="passwordLogin" name="passwordLogin" size="30" maxlength="15" placeholder="Please enter your password"> 
+                <br>
+                <p><a href="#">Forget Password</a></p>
+                <br><br>
+                <button id="loginSubmit" type="submit" onclick="loginCheck()">Submit</button>
+            </form>
+        </fieldset>
     </section>
+
+    <br><br><br><br>
 
     <!--Footer-->
     <footer>
-        <ul id="footerList">
-            <li>
-                <a href="https://sites.bookdoc.com/contact-us/">Contact Us</a>
-            </li>
-
-            <li>
-                <a href="tel:1300882362">1300-88-2362</a>
-            </li>
-
-            <li>
-                <a href="mailto:care@bookdoc.com">care@bookdoc.com</a>
-            </li>
-        </ul>
+        <nav class="footTop">
+            <a href="">Contact Us</a>
+            <a href="tel:1300882362">1300-88-2362</a>
+            <a href="mailto:care@bookdoc.com">care@bookdoc.com</a>
+        </nav>
+        <div class="footMain">
+            <div class="footDropdown">
+                <div class="footDropdown1">
+                    <button class="footDropBtn1">BookDoc</button>
+                    <nav class="footDropCont1">
+                        <a href="">About Us</a>
+                        <a href="">News</a>
+                        <a href="">Careers</a>
+                        <a href="">Meet Our People</a>
+                        <a href="">Our Blog</a>
+                    </nav>
+                </div>
+                <div class="footDropdown2">
+                    <button class="footDropBtn2">Directory</button>
+                    <nav class="footDropCont2">
+                        <a href="">Healthcare Professionals</a>
+                        <a href="">Service/Procedure</a>
+                        <a href="">Location</a>
+                    </nav>
+                </div>
+                <div class="footDropdown3">
+                    <button class="footDropBtn3">Common Searchers</button>
+                    <nav class="footDropCont3">
+                        <a href="">General Practitioner (GP Doctor)</a>
+                        <a href="">Dentist (General)</a>
+                        <a href="">Cardiology</a>
+                        <a href="">Chiropractic</a>
+                        <a href="">Dermatology</a>
+                        <a href="">Gastroenterology & Hepatology</a>
+                        <a href="">General Paediatrics</a>
+                        <a href="">Obstetrics and Gynaecology (O&G)</a>
+                        <a href="">Ophthalmology</a>
+                        <a href="">Otorhinolaryngology (ENT)</a>
+                        <a href="">Physiotherapy</a>
+                        <a href="">Psychiatry</a>
+                    </nav>
+                </div>
+                <div class="footDropdown4">
+                    <button class="footDropBtn4">Cities</button>
+                    <nav class="footDropCont4">
+                        <a href="">Alor Setar</a>
+                        <a href="">Ipoh</a>
+                        <a href="">Johor Bahru</a>
+                        <a href="">Kuala Lumpur</a>
+                        <a href="">Klang</a>
+                        <a href="">Penang</a>
+                        <a href="">Petaling Jaya</a>
+                        <a href="">Putrajaya</a>
+                        <a href="">Subang Jaya</a>
+                        <a href="">Shah Alam</a>
+                        <a href="">Hong Kong</a>
+                        <a href="">Singapore</a>
+                    </nav>
+                </div>
+            </div>
+            <hr>
+            <div class="socialMedia">
+                <div class="title">Follow us:</div>
+                <div class="socialApp">
+                    <a href=""><i class="fab fa-facebook fa-lg"></i><span class="socialName">Facebook</span></a>
+                    <a href=""><i class="fab fa-twitter fa-lg"></i><span class="socialName">Twitter</span></a>
+                    <a href=""><i class="fab fa-instagram fa-lg"></i><span class="socialName">Instagram</span></a>
+                    <a href=""><i class="fab fa-linkedin fa-lg"></i><span class="socialName">LinkedIn</span></a>
+                </div>
+            </div>
+            <nav class="appStore">
+                <a href=""><img src="image/app-store.png" alt="App Store"></a>
+                <a href=""><img src="image/google-play.png" alt="Google Play Store"></a>
+            </nav>
+        </div>
+        <div class="footBot">
+            <em class="copyright">Copyright © 2020</em>
+            <nav>
+                <a href="">Privacy Policy</a>
+                <a href="">Terms of Use</a>
+            </nav>
+        </div>  
     </footer>
     
 </body>

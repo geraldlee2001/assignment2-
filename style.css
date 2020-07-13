@@ -4,7 +4,7 @@ https://encycolorpedia.com/
 */
 
 body {
-    background-color: #fafafa;
+    background-color: #F0F2F5;
     margin: 0;
 }
 
@@ -136,26 +136,6 @@ form p{
 ul.menu{
     list-style: none;
     display: inline-block;
-}
-
-form{
-    width: 70%;
-    min-width: 720px;
-    max-width: 1024px;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: #FFFFFF;
-    box-shadow: 1px 1px #666666;
-}
-
-form label{
-    font-size:25px;
-}
-
-
-form a{
-    text-decoration: none;
-    text-align: right;
 }
 
 input#typeSearching{
@@ -446,3 +426,76 @@ hr { width: 60em;}
 }
 
 /*End of Footer*/
+
+/*Search form*/
+#search form{
+    width: 70%;
+    min-width: 720px;
+    max-width: 1024px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+}
+
+/*Login part*/
+#login fieldset{
+    width: 40%;
+    min-width: 720px;
+    max-width: 1024px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #FFFFFF;
+    box-shadow: white;
+    border-color: white;
+}
+
+#login form label{
+    font-size:25px;
+}
+
+#login form p{
+    text-align: start;
+}
+
+#login form a{
+    text-decoration: none;
+}
+
+#login form a:hover{
+    text-decoration-line: underline;
+}
+
+#login form #loginSubmit{
+    width: 85px;
+    height: 30px;
+}
+
+#login form #emailLogin, #passwordLogin{
+    height: 20px;
+}
+
+
+/*Register part*/
+#register fieldset{
+    width: 40%;
+    min-width: 720px;
+    max-width: 1024px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #FFFFFF;
+    box-shadow: white;
+    border-color: white;
+}
+
+#register form label{
+    font-size:25px;
+}
+
+#register form #registerSubmit{
+    width: 85px;
+    height: 30px;
+}
+
+#register form #emailRegister, #passwordRegister, #passwordConfirmedRegister{
+    height: 20px;
+}
