@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>BOOKDOC: Login</title>
+    
     <link rel="stylesheet" href="style.css">
     <!--[if lt IE 9]> 
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> 
@@ -24,23 +27,25 @@
         <h1 class="sectionTitle">REGISTER</h1>
         <fieldset>
             <form id="formRegister"  action="#">
-                <label for="emailRegister">Email:</label>
+                <label for="emailRegister">Email*:</label>
                 <br>
-                <input type="text" id="emailRegister" name="Email" size="30" placeholder="Please enter your email" >
+                <input type="email" id="emailRegister" name="Email" size="30" placeholder="Please enter your email">
                 <br>
-                <label for="passwordRegister">Password:</label>
+                <label for="passwordRegister">Password*:</label>
                 <br>
-                <input type="password" id="passwordRegister" name="Password" size="30" maxlength="15" placeholder="Please enter your password" >
+                <input type="password" id="passwordRegister" name="Password" size="30" maxlength="15" placeholder="Please enter your password" onblur="validatePassword()">
+                <span id="passwordPrompt"></span>
                 <br>
-                <label for="passwordConfirmedRegister">Password Confirmed:</label>
+                <label for="passwordConfirmedRegister">Password Confirmed*:</label>
                 <br>
-                <input type="password" id="passwordConfirmedRegister" name="PasswordConfirmed" size="30" maxlength="15" placeholder="Please enter again your password">
+                <input type="password" id="passwordConfirmedRegister" name="PasswordConfirmed" size="30" maxlength="15" placeholder="Please enter again your password" onblur="validatePasswordMatch()">
+                <span id="matchPrompt"></span>
                 <br>
                 <label for="birthdayRegister">Birthday</label>
                 <br>
                 <input type="date" id="birthdayRegister" name="birthday">
                 <br><br><br><br>
-                <button id="registerSubmit" type="submit">Submit</button>
+                <button id="registerSubmit" type="submit" onclick="registerCheck()">Submit</button>
             </form>
         </fieldset>
     </section>

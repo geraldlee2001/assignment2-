@@ -74,7 +74,7 @@ margin-right: 30px;
 }
 
 .asideNav a {
-    color: white;
+    color: red;
     text-decoration: none;
     font-size: 20px;
     padding: 5px;
@@ -498,4 +498,52 @@ hr { width: 60em;}
 
 #register form #emailRegister, #passwordRegister, #passwordConfirmedRegister{
     height: 20px;
+}
+
+/*screensize part*/
+@media only screen and (max-width: 1024px){
+    #home img{width: 60%;
+                height: 30%;}
+    #home .asideNav{margin: 0px;
+                        padding: 0px;}
+    .asideNav a {font-size: 20px;}
+    #menu {max-width: 100%;}
+    #menu .menuBorder {margin-left: 10px;
+                        margin-right: 10px;
+                        padding: 5px;}
+    #menu img{width: 35px;
+                height: 40px;}
+    #intro .fotorama {padding-left: 0px;
+                        padding-top: 20px;}
+    header {column-gap: 0%;}
+    .footDropdown {font-size: x-small;}
+    .footTop {height: 70px;}
+}
+
+@media only screen and (max-width: 768px){
+    #home img{width: 60%;
+                height: 30%;}
+    #home .asideNav{margin: 0px;
+                    padding: 0px;}
+    .asideNav a {font-size: 9px;}
+    #menu {max-width: 100%;
+            padding-top: 15px;
+            padding-bottom: 15px;}
+    #menu .menuBorder {margin-left: 5px;
+                    margin-right: 5px;
+                    padding: 5px;
+                    font-size: 7px;}
+    #menu img{width: 32.22%;
+            height: 40%;}
+    #intro .fotorama {padding-left: 0px;
+                    padding-top: 20px;}
+    header {column-gap: 0%;}
+    .footDropdown {font-size: 5px;}
+    .footTop {height: 45px;}
+    .footTop a {font-size: x-small;}
+    .socialMedia {font-size: 7px;}
+    .appStore img {height: 96%;
+                    width: 40%;
+                    align-content: center;}
+    .footBot {font-size: 7px;}
 }

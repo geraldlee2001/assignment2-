@@ -5,11 +5,65 @@ function loginCheck()
         alert("Please enter your email");
     }
     else {
-        var emailLogin=document.getElementById("emailLogin").value
+        var emailLogin = document.getElementById("emailLogin").value
         if (!document.getElementById("passwordLogin").value)
         {
             alert("Please enter your password");
         }   
+    }
+}
+
+function registerCheck()
+{
+    if (!document.getElementById("emailRegister").value)
+    { 
+        alert("Please enter an email");
+    }
+    else if (!document.getElementById("passwordRegister").value) 
+    {
+        var emailLogin = document.getElementById("emailRegister").value
+        {
+            alert("Please enter a password");
+        }   
+    }
+}
+
+function validatePassword()
+{
+    var PassRegister = document.getElementById("passwordRegister").value;
+    var input = /[a-zA-Z0-9]{8,15}/;
+    
+    if (input.test(PassRegister))
+    {
+        document.getElementById("passwordPrompt").style.color="green";
+        document.getElementById("passwordPrompt").innerHTML = "valid";
+        return true;
+    }
+    else
+    {
+        document.getElementById("passwordPrompt").style.color="red";
+        document.getElementById("passwordPrompt").innerHTML = "invalid";
+        return false;
+    }
+}
+
+function validatePasswordMatch()
+{
+    var PassRegister = document.getElementById("passwordRegister").value;
+    var PassRegisterConfirm = document.getElementById("passwordConfirmedRegister").value;
+    var input;
+    
+    if (PassRegister == PassRegisterConfirm)
+    {
+        document.getElementById("matchPrompt").style.color="green";
+        document.getElementById("matchPrompt").innerHTML = "match";
+        return true;
+    }
+    else
+    {
+        document.getElementById("matchPrompt").style.color="red";
+        document.getElementById("matchPrompt").innerHTML = "unmatch";
+        return false;
     }
 }
 
@@ -44,3 +98,4 @@ counters.forEach(counter => {
 
 	updateCount();
 });
+
