@@ -2,148 +2,219 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOKDOC: Activ</title>
+    <!--[if lt IE 9]> 
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> 
+    <![endif]-->
 
-    <title>BOOKDOC</title>
+    <!--Additional CSS-->
+    <link type="text/css" rel="stylesheet" href="assert/css/all.min.css"> <!--FontAwesome Icon--> <!-- https://fontawesome.com/icons?d=listing&m=free -->
     
-    <link type="text/css" rel="stylesheet" href="assert/css/bootstrap.min.css">
     <!-- Main CSS -->
     <link type="text/css" rel="stylesheet" href="style.css">
-
-    <script type="text/js" src="assert/js/jquery-3.5.1.min.js"></script>
-    <script type="text/js" src="assert/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <header>
-        <!--Navbar--> 
-            <a href="index.html"><img id="logo" src="image/BookDoc_logo.png" alt="LOGO"></a>
-            <nav id="asideNav">
-                <a href ="https://sites.bookdoc.com/" target="_blank" >AboutUs</a> |
-                <a href="login.html">Login</a> |
-                <a href="register.html">Register</a>
-            </nav>
-    </header>  
+    <!--Navbar-->
+    <header id="sub">
+        <div class="logo">
+            <a href="index.html"><img src="image/BookDoc_logo.png" alt="logo"></a>
+        </div>
+        <nav class="asideNav">
+            <a href ="https://sites.bookdoc.com/" target="_blank">About Us</a>
+            <div class="separater">|</div>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+
     <!--Menu-->
-    <div class="menu">
-        <ul class="homeMenu">
-
-            <li>
-                <i class="activRewards"></i>
-                <a href="activ.html">Go Activ & Get Rewards</a> 
-            </li>
-
-            <li>
-                <i class="search"></i>
-                <a href="search.html">Search & Book</a> 
-            </li>
-
-            <li>
-                <i class="market"></i>
-                <a href="market.html">One-Stop Shop for Cooperate Healthcare</a> 
-            </li>
-
-            <li>
-                <i class="info"></i>
-             <a href="https://www.bookdoc.com/health-info/mims" target="_blank">Health info</a>
-            </li>
-
-        </ul>
+    <div id="menu">
+        <div>
+            <a class="border" href="activ.html">
+                <img src="image/icon/gift.svg" alt="gift">
+                <div class="title">Go Activ<br>Get Rewards</div>
+            </a> 
+        </div>
+        <div>
+            <a class="border" href="search.html">
+                <img src="image/icon/search&book.svg" alt="booking">
+                <div class="title">Search &<br>Book</div>
+            </a>
+        </div>
+        <div>
+            <a class="border" href="market.html">
+                <img src="image/icon/cart.svg" alt="cart">
+                <div class="title">One-Stop Shop<br>for Cooperate<br>Healthcare</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://www.bookdoc.com/health-info/mims" target="_blank">
+                <img src="image/icon/info.svg" alt="info">
+                <div class="title">Health info</div>
+            </a>
+        </div>
     </div>
-    <hr>
-              <!-- Activ  -->
-    <section id="activ">
-    <h1 class="sectionTitle">BookDoc Activ</h1>  
-        <p class="sectionDesc">Get Rewarded for Staying Activ</p>
+
+    <!-- Activ  -->
+    <main id="activ"> <!--section会reset你的h1, h2... ，越多section里面的h1, h2...的字会越来越小(p/s:section叠在section里面的那种)，我们的page没有很复杂，不用比较好，写css容易一点-->
+        <h1>BookDoc Activ</h1>  
+        <p>Get Rewarded for Staying Activ</p>
         <video class="introvideo" controls >
             <source src="video/bookdoc-activ-preview.mp4" type="video/mp4">
         </video>
-        <br>
-        <br>
-        <br>
-        <ul class="powerOfWalkingList">
-            <div>
-                <h2 class="counter" data-target="9213" style="display:inline;">0</h2><h3 style="display:inline;"> Billion</h3>
-                <h4>Steps</h4>
-                <p class="powerOfWalkingContent">Steps walked on Activ</p>
-                <i class="steps"></i>
+        <h2>The Power of Walking</h2>
+        <div class="stepsStat"> <!--要也是用（dl, dt, dd）or（section, h1, h2）来做吧，重点是字体一直改，算了，用div最好，什么都不用想-->
+            <div class="stat">
+                <h3 class="counter" data-target="9213">0</h3><!--sohai都讲不能inline css了，不会听-->
+                <span class="unit">Billion</span>
+                <h4><span class="title">Steps</span><br>walked on Activ</h4>
+                <img src="image/steps.png" alt="steps">
             </div>
-            <li>
-                <h2 class="counter" data-target="172416" style="display:inline;">0</h2>
-                <h4>Times</h4>
-                <p class="powerOfWalkingContent">Times around the globe</p>
-                    <i class="times"></i>
-            </li>
+            <div class="stat">
+                <h3 class="counter" data-target="172416">0</h3>
+                <h4><span class="title">Times</span><br>around the globe</h4>
+                <img src="image/times.png" alt="times">
+            </div>
+            <div class="stat">
+                <h3 class="counter" data-target="405">0</h3>
+                <span class="unit">Billion</span>
+                <h4><span class="title">Calories</span><br>burnt on Activ</h4>
+                <img src="image/calories.png" alt="calories">
+            </div>
+            <div class="stat">
+                <h3 class="counter" data-target="720">0</h3>
+                <span class="unit">Million</span>
+                <h4><span class="title">Big Mac</span><br>consumed</h4>
+                <img src="image/big mac.png" alt="big mac">
+            </div>
+        </div>
+        <h2>BookDoc Activ in 4 Simple Steps</h2>
+        <div class="procedure">
+            <div class="steps">
+                <img src="image/step1.png" alt="step1"></img>
+                <div class="label" >Step 1</div>
+                <p>Sync your fitness tracker to the BookDoc mobile app</p>
+            </div>
+            <div class="steps">
+                <img src="image/step2.png" alt="step2"></img>
+                <div class="label">Step 2</div>
+                <p>Just start walking or running!</p>
+            </div>
+            <div class="steps">
+                <img src="image/step3.png" alt="step3"></img>
+                <div class="label">Step 3</div>
+                <p>Track your average daily steps over the course of the month</p>
+            </div>
+            <div class="steps">
+                <img src="image/step4.png" alt="step4"></img>
+                <div class="label">Step 4</div>
+                <p>Select and redeem your rewards!</p>
+            </div>
+        </div>
+    </main>
 
-            <li>
-                <h2 class="counter" data-target="405" style="display:inline;">0</h2><h3 style="display:inline;"> Billion</h3>
-                <h4>Calories</h4>
-                <p class="powerOfWalkingContent">Calories burnt on Activ</p>
-                     <i class="calories"></i>
-            </li>
-
-            <li>
-                <h2 class="counter" data-target="720" style="display:inline;">0</h2><h3 style="display:inline;"> Million</h3>
-                <h4>Big Mac</h4>
-                <p class="powerOfWalkingContent"> Big Macconsumed</p>
-                    <i class="bigmac"></i>
-            </li>
-
-        </ul>
-            <br>
-            <br>
-            <br>            
-            <br>
-        <h1 class="title">BookDoc Activ in 4 Simple Steps</h1>
-        <br>
-        <br>
-        <ul class="stepsList">
-            <li>
-                <i class="step1" ></i>
-                <span class="stepsLabel" >Step 1</span>
-                <p class="stepsDesc">Sync your fitness tracker to the BookDoc mobile app</p>
-            </li>
-
-            <li>
-                <i class="step2"></i>
-                <span class="stepsLabel">Step 2</span>
-                <p class="stepsDesc">Just start walking or running!</p>
-            </li>
-            
-            <li>
-                <i class="step3"></i>
-                <span class="stepsLabel">Step 3</span>
-                <p class="stepsDesc">Track your average daily steps over the course of the month</p>
-            </li>
-
-            <li>
-                <i class="step4"></i>
-                <span class="stepsLabel">Step 4</span>
-                <p class="stepsDesc">Select and redeem your rewards!</p>
-            </li>
-
-        </ul>
-        </section>
-<br>
-<br>
-<br>
-<br>
-<hr>
-<!--Footer-->
-<footer>
-    <ul id="footerList">
-        <li>
-            <a href="https://sites.bookdoc.com/contact-us/">Contact Us</a>
-        </li>
-
-        <li>
+    <!--Footer-->
+    <footer>
+        <nav class="footTop">
+            <a href="https://sites.bookdoc.com/contact-us/" target="_blank">Contact Us</a>
             <a href="tel:1300882362">1300-88-2362</a>
-        </li>
-
-        <li>
             <a href="mailto:care@bookdoc.com">care@bookdoc.com</a>
-        </li>
-    </ul>
-</footer>
-<script src="main.js"></script>
+        </nav>
+        <div class="footMain">
+            <div class="footDropdown">
+                <div class="dropdown1">
+                    <button class="dropBtn1">BookDoc</button>
+                    <nav class="dropCont1">
+                        <a href="">About Us</a>
+                        <a href="">News</a>
+                        <a href="">Careers</a>
+                        <a href="">Meet Our People</a>
+                        <a href="">Our Blog</a>
+                    </nav>
+                </div>
+                <div class="dropdown2">
+                    <button class="dropBtn2">Directory</button>
+                    <nav class="dropCont2">
+                        <a href="">Healthcare Professionals</a>
+                        <a href="">Service/Procedure</a>
+                        <a href="">Location</a>
+                    </nav>
+                </div>
+                <div class="dropdown3">
+                    <button class="dropBtn3">Common Searchers</button>
+                    <nav class="dropCont3">
+                        <div class="dropCont3Org">
+                            <div class="left">
+                                <a href="">General Practitioner (GP Doctor)</a>
+                                <a href="">Dentist (General)</a>
+                                <a href="">Cardiology</a>
+                                <a href="">Chiropractic</a>
+                                <a href="">Dermatology</a>
+                            </div>
+                            <div class="mid">
+                                <a href="">Gastroenterology & Hepatology</a>
+                                <a href="">General Paediatrics</a>
+                                <a href="">Obstetrics and Gynaecology (O&G)</a>
+                                <a href="">Ophthalmology</a>
+                                <a href="">Otorhinolaryngology (ENT)</a>
+                            </div>
+                            <div class="right">
+                                <a href="">Physiotherapy</a>
+                                <a href="">Psychiatry</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="dropdown4">
+                    <button class="dropBtn4">Cities</button>
+                    <nav class="dropCont4">
+                        <div class="dropCont4Org">
+                            <div class="left">
+                                <a href="">Alor Setar</a>
+                                <a href="">Ipoh</a>
+                                <a href="">Johor Bahru</a>
+                                <a href="">Kuala Lumpur</a>
+                                <a href="">Klang</a>
+                            </div>
+                            <div class="mid">
+                                <a href="">Penang</a>
+                                <a href="">Petaling Jaya</a>
+                                <a href="">Putrajaya</a>
+                                <a href="">Subang Jaya</a>
+                                <a href="">Shah Alam</a>
+                            </div>
+                            <div class="right">
+                                <a href="">Hong Kong</a>
+                                <a href="">Singapore</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <hr>
+            <div class="socialMedia">
+                <div class="title">Follow us:</div>
+                <div class="socialApp">
+                    <a href="https://www.facebook.com/BookDoc4u"><i class="fab fa-facebook fa-lg"></i><span class="socialName">Facebook</span></a>
+                    <a href="https://twitter.com/bookdoc"><i class="fab fa-twitter fa-lg"></i><span class="socialName">Twitter</span></a>
+                    <a href="https://instagram.com/bookdoc4u/"><i class="fab fa-instagram fa-lg"></i><span class="socialName">Instagram</span></a>
+                    <a href="https://www.linkedin.com/in/bookdoc-910261102"><i class="fab fa-linkedin fa-lg"></i><span class="socialName">LinkedIn</span></a>
+                </div>
+            </div>
+            <nav class="appStore">
+                <a href="https://apps.apple.com/my/app/bookdoc/id1037726744"><img src="image/app-store.png" alt="App Store"></a>
+                <a href="https://play.google.com/store/apps/details?id=com.bookdoc.bookdoc&hl=en"><img src="image/google-play.png" alt="Google Play Store"></a>
+            </nav>
+        </div>
+        <div class="footBot">
+            <em class="copyright">Copyright © 2020</em>
+            <nav>
+                <a href="">Privacy Policy</a>
+                <a href="">Terms of Use</a>
+            </nav>
+        </div>  
+    </footer>
+    <!--Main JavaScript-->
+    <script src="main.js"></script>
 </body>
 </html>

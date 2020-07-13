@@ -2,31 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>BOOKDOC: Login</title>
-    
-    <link rel="stylesheet" href="style.css">
+    <title>BOOKDOC: Activ</title>
     <!--[if lt IE 9]> 
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> 
     <![endif]-->
+
+    <!--Additional CSS-->
+    <link type="text/css" rel="stylesheet" href="assert/css/all.min.css"> <!--FontAwesome Icon--> <!-- https://fontawesome.com/icons?d=listing&m=free -->
+    
+    <!-- Main CSS -->
+    <link type="text/css" rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <!--Navbar--> 
-            <a href="index.html"><img id="logo" src="image/BookDoc_logo.png" alt="LOGO"></a>
-            <nav id="asideNav">
-                <a href ="https://sites.bookdoc.com/" target="_blank" >AboutUs</a> |
-                <a href="login.html">Login</a> |
-                <a href="register.html">Register</a>
-            </nav>
-    </header>  
+    <!--Navbar-->
+    <header id="sub">
+        <div class="logo">
+            <a href="index.html"><img src="image/BookDoc_logo.png" alt="logo"></a>
+        </div>
+        <nav class="asideNav">
+            <a href ="https://sites.bookdoc.com/" target="_blank">About Us</a>
+            <div class="separater">|</div>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header> 
 
     <!--Register-->
-    <section id="register">
-        <h1 class="sectionTitle">REGISTER</h1>
-        <fieldset>
-            <form id="formRegister"  action="#">
+    <main id="register">
+        <h1>Register</h1>
+            <form class="frmRegister" action="#">
                 <label for="emailRegister">Email*:</label>
                 <br>
                 <input type="email" id="emailRegister" name="Email" size="30" placeholder="Please enter your email">
@@ -47,23 +51,20 @@
                 <br><br><br><br>
                 <button id="registerSubmit" type="submit" onclick="registerCheck()">Submit</button>
             </form>
-        </fieldset>
-    </section>
+    </main>
 
     <!--Footer-->
-    <br><br><br><br>
-
     <footer>
         <nav class="footTop">
-            <a href="">Contact Us</a>
+            <a href="https://sites.bookdoc.com/contact-us/" target="_blank">Contact Us</a>
             <a href="tel:1300882362">1300-88-2362</a>
             <a href="mailto:care@bookdoc.com">care@bookdoc.com</a>
         </nav>
         <div class="footMain">
             <div class="footDropdown">
-                <div class="footDropdown1">
-                    <button class="footDropBtn1">BookDoc</button>
-                    <nav class="footDropCont1">
+                <div class="dropdown1">
+                    <button class="dropBtn1">BookDoc</button>
+                    <nav class="dropCont1">
                         <a href="">About Us</a>
                         <a href="">News</a>
                         <a href="">Careers</a>
@@ -71,46 +72,62 @@
                         <a href="">Our Blog</a>
                     </nav>
                 </div>
-                <div class="footDropdown2">
-                    <button class="footDropBtn2">Directory</button>
-                    <nav class="footDropCont2">
+                <div class="dropdown2">
+                    <button class="dropBtn2">Directory</button>
+                    <nav class="dropCont2">
                         <a href="">Healthcare Professionals</a>
                         <a href="">Service/Procedure</a>
                         <a href="">Location</a>
                     </nav>
                 </div>
-                <div class="footDropdown3">
-                    <button class="footDropBtn3">Common Searchers</button>
-                    <nav class="footDropCont3">
-                        <a href="">General Practitioner (GP Doctor)</a>
-                        <a href="">Dentist (General)</a>
-                        <a href="">Cardiology</a>
-                        <a href="">Chiropractic</a>
-                        <a href="">Dermatology</a>
-                        <a href="">Gastroenterology & Hepatology</a>
-                        <a href="">General Paediatrics</a>
-                        <a href="">Obstetrics and Gynaecology (O&G)</a>
-                        <a href="">Ophthalmology</a>
-                        <a href="">Otorhinolaryngology (ENT)</a>
-                        <a href="">Physiotherapy</a>
-                        <a href="">Psychiatry</a>
+                <div class="dropdown3">
+                    <button class="dropBtn3">Common Searchers</button>
+                    <nav class="dropCont3">
+                        <div class="dropCont3Org">
+                            <div class="left">
+                                <a href="">General Practitioner (GP Doctor)</a>
+                                <a href="">Dentist (General)</a>
+                                <a href="">Cardiology</a>
+                                <a href="">Chiropractic</a>
+                                <a href="">Dermatology</a>
+                            </div>
+                            <div class="mid">
+                                <a href="">Gastroenterology & Hepatology</a>
+                                <a href="">General Paediatrics</a>
+                                <a href="">Obstetrics and Gynaecology (O&G)</a>
+                                <a href="">Ophthalmology</a>
+                                <a href="">Otorhinolaryngology (ENT)</a>
+                            </div>
+                            <div class="right">
+                                <a href="">Physiotherapy</a>
+                                <a href="">Psychiatry</a>
+                            </div>
+                        </div>
                     </nav>
                 </div>
-                <div class="footDropdown4">
-                    <button class="footDropBtn4">Cities</button>
-                    <nav class="footDropCont4">
-                        <a href="">Alor Setar</a>
-                        <a href="">Ipoh</a>
-                        <a href="">Johor Bahru</a>
-                        <a href="">Kuala Lumpur</a>
-                        <a href="">Klang</a>
-                        <a href="">Penang</a>
-                        <a href="">Petaling Jaya</a>
-                        <a href="">Putrajaya</a>
-                        <a href="">Subang Jaya</a>
-                        <a href="">Shah Alam</a>
-                        <a href="">Hong Kong</a>
-                        <a href="">Singapore</a>
+                <div class="dropdown4">
+                    <button class="dropBtn4">Cities</button>
+                    <nav class="dropCont4">
+                        <div class="dropCont4Org">
+                            <div class="left">
+                                <a href="">Alor Setar</a>
+                                <a href="">Ipoh</a>
+                                <a href="">Johor Bahru</a>
+                                <a href="">Kuala Lumpur</a>
+                                <a href="">Klang</a>
+                            </div>
+                            <div class="mid">
+                                <a href="">Penang</a>
+                                <a href="">Petaling Jaya</a>
+                                <a href="">Putrajaya</a>
+                                <a href="">Subang Jaya</a>
+                                <a href="">Shah Alam</a>
+                            </div>
+                            <div class="right">
+                                <a href="">Hong Kong</a>
+                                <a href="">Singapore</a>
+                            </div>
+                        </div>
                     </nav>
                 </div>
             </div>
@@ -118,15 +135,15 @@
             <div class="socialMedia">
                 <div class="title">Follow us:</div>
                 <div class="socialApp">
-                    <a href=""><i class="fab fa-facebook fa-lg"></i><span class="socialName">Facebook</span></a>
-                    <a href=""><i class="fab fa-twitter fa-lg"></i><span class="socialName">Twitter</span></a>
-                    <a href=""><i class="fab fa-instagram fa-lg"></i><span class="socialName">Instagram</span></a>
-                    <a href=""><i class="fab fa-linkedin fa-lg"></i><span class="socialName">LinkedIn</span></a>
+                    <a href="https://www.facebook.com/BookDoc4u"><i class="fab fa-facebook fa-lg"></i><span class="socialName">Facebook</span></a>
+                    <a href="https://twitter.com/bookdoc"><i class="fab fa-twitter fa-lg"></i><span class="socialName">Twitter</span></a>
+                    <a href="https://instagram.com/bookdoc4u/"><i class="fab fa-instagram fa-lg"></i><span class="socialName">Instagram</span></a>
+                    <a href="https://www.linkedin.com/in/bookdoc-910261102"><i class="fab fa-linkedin fa-lg"></i><span class="socialName">LinkedIn</span></a>
                 </div>
             </div>
             <nav class="appStore">
-                <a href=""><img src="image/app-store.png" alt="App Store"></a>
-                <a href=""><img src="image/google-play.png" alt="Google Play Store"></a>
+                <a href="https://apps.apple.com/my/app/bookdoc/id1037726744"><img src="image/app-store.png" alt="App Store"></a>
+                <a href="https://play.google.com/store/apps/details?id=com.bookdoc.bookdoc&hl=en"><img src="image/google-play.png" alt="Google Play Store"></a>
             </nav>
         </div>
         <div class="footBot">
@@ -137,6 +154,7 @@
             </nav>
         </div>  
     </footer>
-    <script src="main.js"></script>
+    <!--Main JavaScript-->
+    <script src="main.js"></script>   
 </body>
 </html>
