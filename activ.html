@@ -14,6 +14,7 @@
     <link type="text/css" rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
     <!--Navbar-->
     <header id="sub">
         <div class="logo">
@@ -56,57 +57,65 @@
     </div>
 
     <!-- Activ  -->
-    <main id="activ"> <!--section会reset你的h1, h2... ，越多section里面的h1, h2...的字会越来越小(p/s:section叠在section里面的那种)，我们的page没有很复杂，不用比较好，写css容易一点-->
+    <main id="activ"> 
         <h1>BookDoc Activ</h1>  
         <p>Get Rewarded for Staying Activ</p>
         <video class="introvideo" controls >
             <source src="video/bookdoc-activ-preview.mp4" type="video/mp4">
         </video>
         <h2>The Power of Walking</h2>
-        <div class="stepsStat"> <!--要也是用（dl, dt, dd）or（section, h1, h2）来做吧，重点是字体一直改，算了，用div最好，什么都不用想-->
+        <div class="stepsStat"> 
             <div class="stat">
-                <h3 class="counter" data-target="9213">0</h3><!--sohai都讲不能inline css了，不会听-->
-                <span class="unit">Billion</span>
-                <h4><span class="title">Steps</span><br>walked on Activ</h4>
                 <img src="image/steps.png" alt="steps">
+                <br>
+                <h3 class="counter" data-target="9213">0</h3>
+                <span class="unit">Billion</span>
+                <br>
+                <h4><span class="title">Steps</span><br>walked on Activ</h4>
             </div>
             <div class="stat">
-                <h3 class="counter" data-target="172416">0</h3>
-                <h4><span class="title">Times</span><br>around the globe</h4>
                 <img src="image/times.png" alt="times">
+                <br><br>
+                <h3 class="counter" data-target="172416">0</h3>
+                <br>
+                <h4><span class="title">Times</span><br>around the globe</h4>
             </div>
             <div class="stat">
+                <img src="image/calories.png" alt="calories">
+                <br><br>
                 <h3 class="counter" data-target="405">0</h3>
                 <span class="unit">Billion</span>
+                <br>
                 <h4><span class="title">Calories</span><br>burnt on Activ</h4>
-                <img src="image/calories.png" alt="calories">
             </div>
             <div class="stat">
+                <img src="image/bigmac.png" alt="big mac">
+                <br><br>
                 <h3 class="counter" data-target="720">0</h3>
                 <span class="unit">Million</span>
+                <br>
                 <h4><span class="title">Big Mac</span><br>consumed</h4>
-                <img src="image/big mac.png" alt="big mac">
             </div>
         </div>
         <h2>BookDoc Activ in 4 Simple Steps</h2>
         <div class="procedure">
             <div class="steps">
-                <img src="image/step1.png" alt="step1"></img>
+                <img src="image/step1.png" alt="step1">
                 <div class="label" >Step 1</div>
                 <p>Sync your fitness tracker to the BookDoc mobile app</p>
             </div>
             <div class="steps">
-                <img src="image/step2.png" alt="step2"></img>
+                <img src="image/step2.png" alt="step2">
                 <div class="label">Step 2</div>
                 <p>Just start walking or running!</p>
             </div>
             <div class="steps">
-                <img src="image/step3.png" alt="step3"></img>
+                <img src="image/step3.png" alt="step3">
                 <div class="label">Step 3</div>
                 <p>Track your average daily steps over the course of the month</p>
             </div>
             <div class="steps">
-                <img src="image/step4.png" alt="step4"></img>
+                <img src="image/step4.png" alt="step4">
                 <div class="label">Step 4</div>
                 <p>Select and redeem your rewards!</p>
             </div>
@@ -216,5 +225,6 @@
     </footer>
     <!--Main JavaScript-->
     <script src="main.js"></script>
+    </div>
 </body>
 </html>
