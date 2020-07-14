@@ -607,22 +607,37 @@ hr {
 
 /*Screensize*/
 @media only screen and (max-width: 1024px){
-    #home img{width: 60%;
+    #home img {width: 60%;
                 height: 30%;}
-    #home .asideNav{margin: 0px;
+    #home .asideNav {margin: 0px;
                         padding: 0px;}
-    .asideNav a {font-size: 20px;}
+    #home .asideNav a {padding-top: 40px;}
+    .asideNav a {font-size: 20px;
+                    padding-top: 5px;}
     #menu {max-width: 100%;}
     #menu .menuBorder {margin-left: 10px;
                         margin-right: 10px;
                         padding: 5px;}
     #menu img{width: 35px;
                 height: 40px;}
-    #intro .fotorama {padding-left: 0px;
-                        padding-top: 20px;}
     header {column-gap: 0%;}
     .footDropdown {font-size: x-small;}
     .footTop {height: 70px;}
+    #market .grid {margin-left: 5px;}
+    #market .grid img {width: 400px;
+                        height: 350px;}
+    #market .description {margin-left: 15px;
+                            margin-right: 0px;}
+    #market .description h2 {margin-top: 10px;
+                                margin-bottom: 10px;
+                                text-align: start;}
+    #market .description p {font-size: 11px;}
+    #market .memberSignIn {padding-left: 13px;
+                            padding-right: 13px;}
+    #market .memberSignUp {padding-left: 13px;
+                                padding-right: 13px;}
+    .bookdocSlideshow {width: 100%;
+                        height: 40%;}
 }
 
 @media only screen and (max-width: 768px){
@@ -634,14 +649,14 @@ hr {
     #menu {max-width: 100%;
             padding-top: 15px;
             padding-bottom: 15px;}
+    #menu a.border {padding-left: 5px;
+                padding-right: 7px;}
     #menu .menuBorder {margin-left: 5px;
                     margin-right: 5px;
                     padding: 5px;
                     font-size: 7px;}
     #menu img{width: 32.22%;
             height: 40%;}
-    #intro .fotorama {padding-left: 0px;
-                    padding-top: 20px;}
     header {column-gap: 0%;}
     .footDropdown {font-size: 5px;}
     .footTop {height: 45px;}
@@ -651,4 +666,19 @@ hr {
                     width: 40%;
                     align-content: center;}
     .footBot {font-size: 7px;}
+    #market .grid {margin-left: 5px;}
+    #market .grid img {width: 400px;
+                        height: 350px;}
+    #market .description {margin-left: 15px;
+                            margin-right: 0px;}
+    #market .description h2 {margin-top: 10px;
+                                margin-bottom: 10px;
+                                text-align: start;}
+    #market .description p {font-size: 11px;}
+    #market .memberSignIn {padding-left: 13px;
+                            padding-right: 13px;}
+    #market .memberSignUp {padding-left: 13px;
+                                padding-right: 13px;}
+    .bookdocSlideshow {width: 100%;
+                        height: 40%;}
 }
